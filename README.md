@@ -51,8 +51,7 @@ This project is open source! Both the hardware and software are licensed under t
 
 - **Datasheet:** [DRV2605L Datasheet](https://www.ti.com/lit/ds/symlink/drv2605l.pdf)
 - **Product Page:** [DRV2605L Product Page](https://www.ti.com/product/DRV2605L)
-- **GitHub Repository:** [DRV2605L GitHub Repository](https://github.com/UNIT-Electronics)
-- **Haptic Motor Driver Module:** [DRV2605L Haptic Motor Driver Module](https://github.com/UNIT-Electronics)
+- **GitHub Repository:** [DRV2605L GitHub Repository](https://github.com/UNIT-Electronics/UNIT_DRV2605L_Haptic_Motor_Driver)
 
 Special thanks to:
 - [Stefan Wagner](https://github.com/wagiminator) for support with microcontroller CH552G and CH55x series.
