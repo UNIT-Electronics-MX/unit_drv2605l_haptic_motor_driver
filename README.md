@@ -3,7 +3,7 @@
 Unit Electronics developed a Haptic Motor Driver module for the DRV2605L IC from Texas Instruments. The DRV2605L is a versatile Haptic Driver for LRA and ERM motors, offering advanced features for haptic feedback applications. The module is available on the [Unit Electronics GitHub repository](https://github.com/UNIT-Electronics).
 
 <p align="center">
-  <img src="./Resources/drv2605l.jpg" width="40%" alt="DRV2605L Module">
+  <img src="./hardware/resources/unit_top_v_1_0_ue0065_DRV2605.png" width="40%" alt="DRV2605L Module">
 </p>
 
 
