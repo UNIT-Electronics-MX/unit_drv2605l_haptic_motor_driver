@@ -14,7 +14,7 @@
 ## 🔌 Pinout
 
 <div align="center">
-<a href="./resources/unit_pinout_v_1_0_ue0065_DRV2605.jpg" width="1000px"><br/>Pinout</a>
+<a href="./resources/unit_pinout_v_1_0_ue0065_DRV2605.jpg"> <img src="./resources/unit_pinout_v_1_0_ue0065_DRV2605.jpg" width="500x"><br/>Pinout</a>
 </div>
 
 | Pin Label | Function         | Notes                             |
