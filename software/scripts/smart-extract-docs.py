@@ -620,8 +620,7 @@ def create_resources_page() -> str:
     else:
         hardware_resources_section += "- 🔌 Schematic Diagram - Not found (looking for unit_sch_*.pdf)\n"
     
-    hardware_resources_section += """- 📐 [Board Dimensions](hardware/board-dimensions.md) - Physical specifications
-- 🔧 [Pinout Reference](hardware/pinout.md) - Pin configuration details
+    hardware_resources_section += """-  [Pinout Reference](hardware/pinout.md) - Pin configuration details
 
 """
     
