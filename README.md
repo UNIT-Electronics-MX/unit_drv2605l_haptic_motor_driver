@@ -1,36 +1,36 @@
 # Module DRV2605L Haptic Motor Driver
 
+
+## Introduction
+
 Unit Electronics developed a Haptic Motor Driver module for the DRV2605L IC from Texas Instruments. The DRV2605L is a versatile Haptic Driver for LRA and ERM motors, offering advanced features for haptic feedback applications. The module is available on the [Unit Electronics GitHub repository](https://github.com/UNIT-Electronics).
 
 <p align="center">
-  <img src="./hardware/resources/unit_top_v_1_0_ue0065_DRV2605.png" width="40%" alt="DRV2605L Module">
+  <img src="./hardware/resources/unit_top_v_1_0_ue0065_DRV2605.png" width="60%" alt="DRV2605L Module">
 </p>
 
 
-## Features
-- **Compatibility:** Works seamlessly with:
-  - Cocket Nova (SDCC Compiler)
-  - RP2040 and ESP32 (MicroPython)
-- **Integrated Development Environments:**
-  - Thonny IDE for MicroPython (ESP32 & RP2040)
-  - Visual Studio Code for Cocket Nova (SDCC)
-- **Open Source:** Hardware and software licensed under MIT.
+
+<div align="center">
+
+### Quick Setup
 
 
-## Getting Started
+[<img src="https://img.shields.io/badge/Product%20Wiki-blue?style=for-the-badge" alt="Product Wiki">](https://unit-electronics-mx.github.io/unit_drv2605l_haptic_motor_driver/)
+[<img src="https://img.shields.io/badge/Datasheet-green?style=for-the-badge" alt="Datasheet">](hardware/resources/)
+[<img src="https://img.shields.io/badge/Buy%20Now-orange?style=for-the-badge" alt="Buy Now">](https://uelectronics.com/)
+[<img src="https://img.shields.io/badge/Getting%20Started-purple?style=for-the-badge" alt="Getting Started">](https://unit-electronics-mx.github.io/unit_drv2605l_haptic_motor_driver/software/getting-started)
 
-### Using the Module with **Cocket Nova**
-The module is compatible with the Cocket Nova board using the SDCC compiler. To get started, follow the official documentation to install the necessary tools and drivers:
-
-- [Cocket Nova Getting Started Guide](https://unit-electronics.github.io/CH55x_SDCC_Doc/install_linux.html)
-
-Additional examples are available in the [CH55X_SDCC_Examples repository](https://github.com/UNIT-Electronics/CH55x_SDCC_Examples).
+</div>
 
 
-### Using the Module with **ESP32 and MicroPython**
-The module is also compatible with the DualMCU development board using MicroPython. Follow the official documentation to set up the environment:
+## 📦 Overview
 
-- [DualMCU ESP32 & RP2040 Getting Started Guide](https://unit-electronics.github.io/DualMCU-ONE/env.html#micropython-installation-on-dualmcu)
+| Feature                      | Description                        |
+|------------------------------|------------------------------------|
+| Compatibility                | Works seamlessly with Cocket Nova (SDCC Compiler), RP2040 and ESP32 (MicroPython) |
+| Integrated Development Environments | Thonny IDE for MicroPython (ESP32 & RP2040), Visual Studio Code for Cocket Nova (SDCC) |
+| Open Source                  | Hardware and software licensed under MIT |
 
 
 
