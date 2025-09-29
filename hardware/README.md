@@ -1,7 +1,7 @@
 # Hardware
 
 
-<a href="./resources/"><img src="./resources/Schematics_icon.jpg" width="500px"><br/> Schematics</a>
+<a href="./unit_schematic_v_1_0_ue0065_DRV2605.pdf"></img src="./resources/Schematics_icon.jpg" width="500px"><br/> Schematics</a>
 
 ---
 
@@ -16,6 +16,8 @@
 <div align="center">
 <a href="./resources/unit_pinout_v_1_0_ue0065_DRV2605.jpg"> <img src="./resources/unit_pinout_v_1_0_ue0065_DRV2605.jpg" width="500x"><br/>Pinout</a>
 </div>
+
+### **Pinout Details**
 
 | Pin Label | Function         | Notes                             |
 |-----------|------------------|-----------------------------------|
@@ -38,6 +40,7 @@
 ## 📃 Board Topology
 <div align="center">
 <a href="./resources/unit_topology_v_1_0_ue0065_DRV2605.png"><img src="./resources/unit_topology_v_1_0_ue0065_DRV2605.png" width="500px"><br/>Topology</a>
+</div>
 
 | Ref.  | Description                                                                 |
 |-------|-----------------------------------------------------------------------------|
@@ -47,5 +50,3 @@
 | J2    | 1mm JST Connector compatible with QWIIC and STEMMA QT Connector Jack        |
 | J3    | Output for haptic motor                                                     |
 | JP1   | Header for Input Signals                                                    |
-
-</div>

@@ -82,27 +82,44 @@ def write_file_content(file_path, content):
 def fix_image_sizes(content: str) -> str:
     """Fix image sizes for better display in mdBook, preserving HTML link structure."""
     
-    # First, handle HTML link structures with images - these should be preserved as-is but with better styling
-    # Pattern: <a href="..."><img src="..." width="..." ...><br/> Text</a>
+    # First, handle HTML link structures with images that are already inside div center - just fix sizing
+    # Pattern: <div align="center"><a href="..."><img src="..." width="..." ...><br/> Text</a></div>
     content = re.sub(
-        r'<a href="([^"]+)"><img src="([^"]+)"[^>]*><br/>\s*([^<]*)</a>',
+        r'<div align="center">\s*<a href="([^"]+)"><img src="([^"]+)"[^>]*><br/>\s*([^<]*)</a>\s*</div>',
         r'<div align="center"><a href="\1"><img src="\2" style="max-width: 500px; height: auto;" alt="\3"><br/> \3</a></div>',
         content
     )
     
-    # Handle standalone img tags with width attribute (not part of links)
-    # We'll temporarily mark linked images to avoid processing them
-    temp_placeholder = "___LINKED_IMG___"
+    # Handle standalone link+image structures (not already wrapped) - add wrapper
+    # Pattern: <a href="..."><img src="..." width="..." ...><br/> Text</a>
+    content = re.sub(
+        r'(?<!<div align="center">\s*)<a href="([^"]+)"><img src="([^"]+)"[^>]*><br/>\s*([^<]*)</a>(?!\s*</div>)',
+        r'<div align="center"><a href="\1"><img src="\2" style="max-width: 500px; height: auto;" alt="\3"><br/> \3</a></div>',
+        content
+    )
+    
+    # Handle standalone img tags with width attribute (not part of links or already centered)
+    # We'll temporarily mark linked images and centered content to avoid processing them
+    temp_placeholder_linked = "___LINKED_IMG___"
+    temp_placeholder_centered = "___CENTERED_DIV___"
     
     # Temporarily replace linked images
     linked_images = []
     def store_linked_img(match):
         linked_images.append(match.group(0))
-        return f"{temp_placeholder}{len(linked_images)-1}___"
+        return f"{temp_placeholder_linked}{len(linked_images)-1}___"
     
     content = re.sub(r'<a[^>]*>.*?<img[^>]*>.*?</a>', store_linked_img, content, flags=re.DOTALL)
     
-    # Now process standalone images
+    # Temporarily replace centered divs
+    centered_divs = []
+    def store_centered_div(match):
+        centered_divs.append(match.group(0))
+        return f"{temp_placeholder_centered}{len(centered_divs)-1}___"
+    
+    content = re.sub(r'<div align="center">.*?</div>', store_centered_div, content, flags=re.DOTALL)
+    
+    # Now process standalone images that aren't already handled
     content = re.sub(
         r'<img src="([^"]+)" width="[^"]*"([^>]*)>',
         r'<img src="\1" style="max-width: 80%; height: auto;"\2>',
@@ -123,9 +140,13 @@ def fix_image_sizes(content: str) -> str:
         content
     )
     
-    # Restore linked images
+    # Restore centered divs first
+    for i, centered_div in enumerate(centered_divs):
+        content = content.replace(f"{temp_placeholder_centered}{i}___", centered_div)
+    
+    # Then restore linked images
     for i, linked_img in enumerate(linked_images):
-        content = content.replace(f"{temp_placeholder}{i}___", linked_img)
+        content = content.replace(f"{temp_placeholder_linked}{i}___", linked_img)
     
     return content
 
