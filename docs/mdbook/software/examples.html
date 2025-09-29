@@ -178,6 +178,29 @@
                         <h1 id="examples"><a class="header" href="#examples">Examples</a></h1>
 <h2 id="arduinoc-examples"><a class="header" href="#arduinoc-examples">Arduino/C++ Examples</a></h2>
 <p>The following examples demonstrate various features of this development board.</p>
+<h3 id="-sample"><a class="header" href="#-sample">⚡ sample</a></h3>
+<pre><code class="language-cpp">#include &lt;Wire.h&gt;
+#include &lt;Adafruit_DRV2605.h&gt;
+
+//////////////////// Pines / I2C ////////////////////
+#define SDA_PIN 6
+#define SCL_PIN 7
+
+Adafruit_DRV2605 drv;
+
+//////////////////// Funciones de secuencia ////////////////////
+
+// Modo 1: Vibración fuerte + pausa + pulso
+void hapticMode1() {
+  drv.setWaveform(0, 85);   // vibración fuerte
+  drv.setWaveform(1, 0);    // fin
+  drv.go();
+  delay(300);
+
+  drv.setWaveform(0, 47);   // pulso corto
+  drv.setWaveform(1, 0);
+</code></pre>
+<p><a href="https://github.com/UNIT-Electronics-MX/unit_drv2605l_haptic_motor_driver/blob/main/software/examples/c/sample.ino">📄 See complete code on GitHub</a></p>
 <h2 id="python-examples"><a class="header" href="#python-examples">Python Examples</a></h2>
 <p>The following Python examples demonstrate usage with the sensor.</p>
 <h3 id="-main"><a class="header" href="#-main">🐍 main</a></h3>
