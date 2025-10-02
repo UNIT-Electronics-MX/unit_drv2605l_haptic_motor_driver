@@ -3,7 +3,7 @@
 
 ## Introduction
 
-Unit Electronics developed a Haptic Motor Driver module for the DRV2605L IC from Texas Instruments. The DRV2605L is a versatile Haptic Driver for LRA and ERM motors, offering advanced features for haptic feedback applications. The module is available on the [Unit Electronics GitHub repository](https://github.com/UNIT-Electronics).
+Unit Electronics developed a Haptic Motor Driver module for the DRV2605L IC from Texas Instruments. The DRV2605L is a versatile Haptic Driver for LRA and ERM motors, offering advanced features for haptic feedback applications.
 
 <p align="center">
   <img src="./hardware/resources/unit_top_v_1_0_ue0065_DRV2605.png" width="60%" alt="DRV2605L Module">
@@ -16,15 +16,15 @@ Unit Electronics developed a Haptic Motor Driver module for the DRV2605L IC from
 ### Quick Setup
 
 
-[<img src="https://img.shields.io/badge/Product%20Wiki-blue?style=for-the-badge" alt="Product Wiki">](https://unit-electronics-mx.github.io/unit_drv2605l_haptic_motor_driver/)
+[<img src="https://img.shields.io/badge/Product%20Wiki-blue?style=for-the-badge" alt="Product Wiki">](https://unit-electronics-mx.github.io/unit_i2c_drv2605l_haptic_motor_controller_module/)
 [<img src="https://img.shields.io/badge/Datasheet-green?style=for-the-badge" alt="Datasheet">](hardware/resources/)
 [<img src="https://img.shields.io/badge/Buy%20Now-orange?style=for-the-badge" alt="Buy Now">](https://uelectronics.com/)
-[<img src="https://img.shields.io/badge/Getting%20Started-purple?style=for-the-badge" alt="Getting Started">](https://unit-electronics-mx.github.io/unit_drv2605l_haptic_motor_driver/software/getting-started)
+[<img src="https://img.shields.io/badge/Getting%20Started-purple?style=for-the-badge" alt="Getting Started">](https://unit-electronics-mx.github.io/unit_i2c_drv2605l_haptic_motor_controller_module/software/getting-started.html)
 
 </div>
 
 
-## 📦 Overview
+## Overview
 
 | Feature                      | Description                        |
 |------------------------------|------------------------------------|
@@ -32,7 +32,14 @@ Unit Electronics developed a Haptic Motor Driver module for the DRV2605L IC from
 | Integrated Development Environments | Thonny IDE for MicroPython (ESP32 & RP2040), Visual Studio Code for Cocket Nova (SDCC) |
 | Open Source                  | Hardware and software licensed under MIT |
 
+## Applications
 
+- Haptic feedback in wearable devices
+- Gaming controllers
+- Mobile devices
+- Robotics
+- Virtual reality systems
+- Automotive interfaces
 
 ## Licensing
 
