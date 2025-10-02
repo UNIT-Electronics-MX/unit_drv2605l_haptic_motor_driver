@@ -1,9 +1,11 @@
 # Hardware
 
+<div align="center">
+<a href="unit_sch_v_1_0_ue0065_DRV2605.pdf">
+    <img src="resources/Schematics_icon.jpg" width="500px"><br/>Schematics
+</a>
+</div>
 
-<a href="./unit_schematic_v_1_0_ue0065_DRV2605.pdf"></img src="./resources/Schematics_icon.jpg" width="500px"><br/> Schematics</a>
-
----
 
 ## Technical Specifications
 
@@ -33,11 +35,13 @@
 </div>
 
 ## Board Dimensions
+
 <div align="center">
 <a href="./resources/unit_dimension_v_1_0_ue0065_DRV2605.png"><img src="./resources/unit_dimension_v_1_0_ue0065_DRV2605.png" width="500px"><br/>Dimensions</a>
 </div>
 
 ## Board Topology
+
 <div align="center">
 <a href="./resources/unit_topology_v_1_0_ue0065_DRV2605.png"><img src="./resources/unit_topology_v_1_0_ue0065_DRV2605.png" width="500px"><br/>Topology</a>
 </div>
