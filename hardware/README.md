@@ -5,13 +5,13 @@
 
 ---
 
-## ⚙️ Technical Specifications
+## Technical Specifications
 
 - **Interface:** I2C 
 - **Input Voltage:** 3.3V-5V
 - **Compatible With:** LRA (Linear Resonance Actuator) and ERM (Eccentric Rotating Mass) 
 
-## 🔌 Pinout
+## Pinout
 
 <div align="center">
 <a href="./resources/unit_pinout_v_1_0_ue0065_DRV2605.jpg"> <img src="./resources/unit_pinout_v_1_0_ue0065_DRV2605.jpg" width="500x"><br/>Pinout</a>
@@ -32,12 +32,12 @@
 
 </div>
 
-## 📏 Board Dimensions
+## Board Dimensions
 <div align="center">
 <a href="./resources/unit_dimension_v_1_0_ue0065_DRV2605.png"><img src="./resources/unit_dimension_v_1_0_ue0065_DRV2605.png" width="500px"><br/>Dimensions</a>
 </div>
 
-## 📃 Board Topology
+## Board Topology
 <div align="center">
 <a href="./resources/unit_topology_v_1_0_ue0065_DRV2605.png"><img src="./resources/unit_topology_v_1_0_ue0065_DRV2605.png" width="500px"><br/>Topology</a>
 </div>

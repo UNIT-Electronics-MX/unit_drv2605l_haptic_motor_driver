@@ -1,5 +1,4 @@
-# Module DRV2605L Haptic Motor Driver
-
+# DevLab: I2C DRV2605L Haptic Motor Controller Module
 
 ## Introduction
 
@@ -62,9 +61,3 @@ This project is open source! Both the hardware and software are licensed under t
 
 Special thanks to:
 - [Stefan Wagner](https://github.com/wagiminator) for support with microcontroller CH552G and CH55x series.
-
-
-## About Unit Electronics
-The DRV2605L Haptic Motor Driver Module is developed and maintained by **Unit Electronics**, dedicated to creating open-source hardware and software solutions for embedded systems.
-
-For questions, feedback, or contributions, feel free to reach out or submit issues through the [GitHub repository](https://github.com/UNIT-Electronics).
