@@ -2,7 +2,16 @@
 
 ## Introduction
 
-Unit Electronics developed a Haptic Motor Driver module for the DRV2605L IC from Texas Instruments. The DRV2605L is a versatile Haptic Driver for LRA and ERM motors, offering advanced features for haptic feedback applications.
+The **DRV2605L Haptic Motor Controller Module** is a compact, easy-to-use board designed to provide high-quality haptic feedback for a wide range of applications. At its core is the DRV2605L IC from Texas Instruments, a highly integrated haptic driver that supports both Linear Resonance Actuators (LRA) and Eccentric Rotating Mass (ERM) motors. This module enables precise and programmable vibration effects, making it ideal for wearables, handheld devices, robotics, and user interface prototyping.
+
+Key features include:
+- **I2C Interface:** Simple integration with microcontrollers and single-board computers.
+- **Wide Voltage Range:** Operates from 3.3V to 5V, compatible with most development platforms.
+- **Plug-and-Play Connectors:** 1mm JST connectors compatible with QWIIC and STEMMA QT ecosystems for rapid prototyping.
+- **Advanced Haptic Effects:** Built-in library of vibration patterns and real-time playback support.
+- **Open Source Support:** Example code and drivers available for Arduino, MicroPython, and other platforms.
+
+Whether you are developing tactile feedback for a wearable device, enhancing a gaming controller, or adding intuitive notifications to your project, this module provides a reliable and flexible solution for integrating haptics into your designs.
 
 <p align="center">
   <img src="./hardware/resources/unit_top_v_1_0_ue0065_DRV2605.png" width="60%" alt="DRV2605L Module">
@@ -27,9 +36,11 @@ Unit Electronics developed a Haptic Motor Driver module for the DRV2605L IC from
 
 | Feature                      | Description                        |
 |------------------------------|------------------------------------|
-| Compatibility                | Works seamlessly with Cocket Nova (SDCC Compiler), RP2040 and ESP32 (MicroPython) |
-| Integrated Development Environments | Thonny IDE for MicroPython (ESP32 & RP2040), Visual Studio Code for Cocket Nova (SDCC) |
-| Open Source                  | Hardware and software licensed under MIT |
+| **IC**                       | DRV2605L Haptic Motor Driver       |
+| **Interface**                | I2C                                |
+| **Input Voltage**            | 3.3V-5V                            |
+| **Compatible With**          | LRA (Linear Resonance Actuator) and ERM (Eccentric Rotating Mass) |
+| **Connectors**               | 1mm JST Connectors compatible with QWIIC and STEMMA QT |
 
 ## Applications
 
